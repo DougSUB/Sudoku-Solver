@@ -1,4 +1,5 @@
 ﻿using System;
+using Sudoku_Solver.Classes;
 
 namespace Sudoku_Solver
 {
@@ -6,7 +7,14 @@ namespace Sudoku_Solver
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+
+			SudokuPuzzle Puzzle = new SudokuPuzzle();
+			Puzzle.BlankPuzzle();
+			Puzzle.DisplayPuzzle();
+			Puzzle.GenerateRandomPuzzle();
+			Console.WriteLine();
+			Puzzle.DisplayPuzzle();
+			//Puzzle.Solve(Puzzle.Grid);
 		}
 	}
 }
